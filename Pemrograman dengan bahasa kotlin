@@ -140,4 +140,146 @@ fun main() {
     println("$totalTripLength miles left to destination")
 }
 ***
+fun main() {
+    val trip1: Double = 3.20
+    val trip2: Double = 4.10
+    val trip3: Double = 1.72
+    val totalTripLength: Double = trip1 + trip2 + trip3
+    println("$totalTripLength miles left to destination")
+}
+***
+fun main() {
+    val trip1 = 3.20
+    val trip2 = 4.10
+    val trip3 = 1.72
+    val totalTripLength = trip1 + trip2 + trip3
+    println("$totalTripLength miles left to destination")
+}
+***
+fun main() {
+    val nextMeeting = "Next meeting is:"
+    val date = "January 1"
+    val reminder = nextMeeting + date
+    println(reminder)
+}
+***
+fun main() {
+    val nextMeeting = "Next meeting is: "
+    val date = "January 1"
+    val reminder = nextMeeting + date
+    println(reminder)
+}
+***
+fun main() {
+    val nextMeeting = "Next meeting is: "
+    val date = "January 1"
+    val reminder = nextMeeting + date + " at work"
+    println(reminder)
+}
+***
+fun main() {
+    println("Say \"hello broku\"")
+    println("Say \"nanda hidayat\"")
+}
+***
+fun main() {
+    val notificationsEnabled: Boolean = true
+    println(notificationsEnabled)
+}
+***
+fun main() {
+    val notificationsEnabled: Boolean = false
+    println(notificationsEnabled)
+}
+***
+fun main() {
+    val notificationsEnabled: Boolean = false
+    println("Are notifications enabled? " + notificationsEnabled)
+}
+***
+/**
+ * This program displays the number of messages
+ * in the user's inbox.
+ */
+fun main() {
+    // Create a variable for the number of unread messages.
+    var count = 10
+    println("You have $count unread messages.")
 
+    // Decrease the number of messages by 1.
+    count--
+    println("You have $count unread messages.")
+}
+***
+Membuat dan menggunakan fungsi kotlin
+fun main() {
+    println("Happy Birthday, Nanda!")
+    println("You are now 20 years old!")
+}
+***
+fun main() {
+    birthdayGreeting()
+}
+fun birthdayGreeting() {
+    println("Happy Birthday, Nanda!")
+    println("You are now 20 years old!")
+}
+***
+fun main() {
+    birthdayGreeting()
+}
+
+fun birthdayGreeting(): Unit {
+    println("Happy Birthday, Nanda!")
+    println("You are now 20 years old!")
+}
+***
+fun main() {
+    val greeting = birthdayGreeting()
+    println(greeting)
+}
+fun birthdayGreeting(): String {
+    val nameGreeting = "Happy Birthday, Nanda!"
+    val ageGreeting = "You are now 20 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+***
+fun main() {
+    println(birthdayGreeting())
+}
+fun birthdayGreeting(): String {
+    val nameGreeting = "Happy Birthday, Nanda!"
+    val ageGreeting = "You are now 20 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+***
+fun birthdayGreeting(name: String): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now 20 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting("Nanda"))
+}
+***
+fun birthdayGreeting(name: String): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now 20 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting("Nanda"))
+    println(birthdayGreeting("The Rock"))
+	println(birthdayGreeting("Jon Sena"))
+}
+***
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now $age years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting("Nanda", 20))
+    println(birthdayGreeting("Jojon", 26))
+}
+***
